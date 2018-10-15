@@ -6,7 +6,7 @@ using System.Web.Routing;
 
 namespace KendoCRUDService
 {
-    // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
+    // Note: For instructions on enabling IIS6 or IIS7 classic mode,
     // visit http://go.microsoft.com/?LinkId=9394801
 
     public class MvcApplication : System.Web.HttpApplication
@@ -18,10 +18,6 @@ namespace KendoCRUDService
 
         public static void RegisterRoutes(RouteCollection routes)
         {
-            routes.MapHubs(new HubConfiguration
-            {
-                EnableCrossDomain = true
-            });
 
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
